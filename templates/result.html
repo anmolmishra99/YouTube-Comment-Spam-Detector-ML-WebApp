@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Result</title>
+</head>
+<body>
+        <center>
+                <div class="container">
+                    <div class="brandname">
+                        <br>
+                        <a href="http://127.0.0.1:5000/"> ML APp </a>
+                    </div>
+                    <br>
+                    <h2>Spam Detector for Youtube Comment</h2>
+                </div>
+                <p><b> Result For Comment</b></p>
+
+                <div class="result">
+                    {% if prediction == 1 %}
+                    <h2>Spam</h2>
+                    {% elif prediction == 0 %}
+                    <h2> Not A Spam</h2>
+                    {% endif %}
+
+
+                </div>
+
+</body>
+</html>
